@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myflix/data/data.dart';
-import 'package:myflix/widgets/widgets.dart';
+import 'package:myflix/widgets/all_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myflix/models/all_models.dart';
+import 'package:myflix/widgets/all_widgets.dart';
 
 class MainContentHeader extends StatelessWidget {
   final Content featuredContent;
@@ -39,6 +40,26 @@ class MainContentHeader extends StatelessWidget {
             width: 250.0,
           ),
         ),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 40.0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              FeaturedVerticalButton(
+                icon: Icons.add,
+                title: 'List',
+                onTap: () => print('List'),
+              ),
+              FeaturedVerticalButton(
+                icon: Icons.info_outline,
+                title: 'Info',
+                onTap: () => print('Info'),
+              ),
+            ],
+          ),
+        )
       ],
     );
   }
