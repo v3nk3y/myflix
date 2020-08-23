@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myflix/screens/screens.dart';
+import 'package:myflix/screens/all_screens.dart';
 
 void main() {
   runApp(MyApp());

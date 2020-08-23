@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myflix/data/data.dart';
 import 'package:myflix/widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,6 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.grey[900],
         child: const Icon(Icons.cast),
@@ -19,6 +21,15 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 50.0),
         child: CustomAppBar(),
+      ),
+      body: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: MainContentHeader(
+              featuredContent: sintelContent,
+            ),
+          )
+        ],
       ),
     );
   }
