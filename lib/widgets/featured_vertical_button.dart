@@ -18,7 +18,7 @@ class FeaturedVerticalButton extends StatelessWidget {
       child: Column(
         children: [
           Icon(icon, color: Colors.white),
-          SizedBox(height: 10.0),
+          SizedBox(height: 5.0),
           Text(
             title,
             style: TextStyle(

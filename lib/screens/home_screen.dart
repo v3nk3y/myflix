@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: MainContentHeader(
+            child: FeaturedContentHeader(
               featuredContent: sintelContent,
             ),
           )

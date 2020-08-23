@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:myflix/models/all_models.dart';
 import 'package:myflix/widgets/all_widgets.dart';
 
-class MainContentHeader extends StatelessWidget {
+class FeaturedContentHeader extends StatelessWidget {
   final Content featuredContent;
-  const MainContentHeader({
+  const FeaturedContentHeader({
     Key key,
     @required this.featuredContent,
   }) : super(key: key);
@@ -49,9 +49,10 @@ class MainContentHeader extends StatelessWidget {
             children: [
               FeaturedVerticalButton(
                 icon: Icons.add,
-                title: 'List',
-                onTap: () => print('List'),
+                title: 'My List',
+                onTap: () => print('My List'),
               ),
+              FeaturedPlayButton(),
               FeaturedVerticalButton(
                 icon: Icons.info_outline,
                 title: 'Info',
