@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:myflix/data/data.dart';
 import 'package:myflix/widgets/all_widgets.dart';
@@ -57,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         return GestureDetector(
                           onTap: () => print(previewContent.name),
                           child: Stack(
+                            alignment: Alignment.center,
                             children: [
                               Container(
                                 height: 130.0,
@@ -67,6 +70,30 @@ class _HomeScreenState extends State<HomeScreen> {
                                     image: AssetImage(previewContent.imageUrl),
                                     fit: BoxFit.cover,
                                   ),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    width: 4.0,
+                                    color: previewContent.color,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                height: 130.0,
+                                width: 130.0,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      colors: [
+                                        Colors.black,
+                                        Colors.black45,
+                                        Colors.transparent
+                                      ],
+                                      stops: [
+                                        0,
+                                        0.25,
+                                        1
+                                      ],
+                                      begin: Alignment.bottomCenter,
+                                      end: Alignment.topCenter),
                                   shape: BoxShape.circle,
                                   border: Border.all(
                                     width: 4.0,
