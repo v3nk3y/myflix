@@ -8,4 +8,8 @@ class MyflixAssets {
   static const String sintelTitle = '${_images}sintel_title.png';
   static const String sintelVideoUrl =
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4';
+
+  static const String umbrellaAcademy = '${_images}umbrella_academy.jpg';
+  static const String umbrellaAcademyTitle =
+      '${_images}umbrella_academy_title.png';
 }
