@@ -12,4 +12,7 @@ class MyflixAssets {
   static const String umbrellaAcademy = '${_images}umbrella_academy.jpg';
   static const String umbrellaAcademyTitle =
       '${_images}umbrella_academy_title.png';
+
+  static const String blackMirror = '${_images}black_mirror.jpg';
+  static const String blackMirrorTitle = '${_images}black_mirror_title.png';
 }

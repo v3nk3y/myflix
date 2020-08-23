@@ -19,10 +19,10 @@ final List<Content> previews = const [
     titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
   ),
   Content(
-    name: 'The Umbrella Academy',
-    imageUrl: MyflixAssets.umbrellaAcademy,
-    color: Colors.yellow,
-    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
   ),
   Content(
     name: 'The Umbrella Academy',
@@ -31,10 +31,10 @@ final List<Content> previews = const [
     titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
   ),
   Content(
-    name: 'The Umbrella Academy',
-    imageUrl: MyflixAssets.umbrellaAcademy,
-    color: Colors.yellow,
-    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
   ),
   Content(
     name: 'The Umbrella Academy',
