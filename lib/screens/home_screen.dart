@@ -74,6 +74,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ),
                               ),
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                child: SizedBox(
+                                  height: 60.0,
+                                  child:
+                                      Image.asset(previewContent.titleImageUrl),
+                                ),
+                              )
                             ],
                           ),
                         );
