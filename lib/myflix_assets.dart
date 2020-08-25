@@ -15,4 +15,16 @@ class MyflixAssets {
 
   static const String blackMirror = '${_images}black_mirror.jpg';
   static const String blackMirrorTitle = '${_images}black_mirror_title.png';
+
+  static const String breakingBad = '${_images}breaking_bad.jpg';
+
+  static const String strangerThings = '${_images}stranger_things.jpg';
+  static const String teotfw = '${_images}teotfw.jpg';
+  static const String thirteenReasonsWhy = '${_images}thirteen_reasons_why.jpg';
+
+  static const String crown = '${_images}crown.jpg';
+  static const String crownTitle = '${_images}crown_title.png';
+  static const String tigerKing = '${_images}tiger_king.jpg';
+
+  static const String htsdof = '${_images}htsdof.jpg';
 }

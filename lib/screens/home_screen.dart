@@ -35,6 +35,18 @@ class _HomeScreenState extends State<HomeScreen> {
               previewsContentList: previews,
             ),
           ),
+          SliverToBoxAdapter(
+            child: ContentSection(
+              title: 'My List',
+              contentSectionList: myList,
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: ContentSection(
+              title: 'Trending',
+              contentSectionList: trending,
+            ),
+          )
         ],
       ),
     );

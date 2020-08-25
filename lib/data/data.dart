@@ -42,4 +42,116 @@ final List<Content> previews = const [
     color: Colors.yellow,
     titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
   ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: MyflixAssets.umbrellaAcademy,
+    color: Colors.yellow,
+    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+  ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: MyflixAssets.umbrellaAcademy,
+    color: Colors.yellow,
+    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+  ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: MyflixAssets.umbrellaAcademy,
+    color: Colors.yellow,
+    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+  ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: MyflixAssets.blackMirror,
+    color: Colors.red,
+    titleImageUrl: MyflixAssets.blackMirrorTitle,
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: MyflixAssets.umbrellaAcademy,
+    color: Colors.yellow,
+    titleImageUrl: MyflixAssets.umbrellaAcademyTitle,
+  ),
+];
+
+final List<Content> myList = const [
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+  Content(
+      name: 'How to Sell Drugs Online (Fast)', imageUrl: MyflixAssets.htsdof),
+  Content(name: 'Black Mirror', imageUrl: MyflixAssets.blackMirror),
+];
+
+final List<Content> originals = const [
+  Content(name: 'Stranger Things', imageUrl: MyflixAssets.strangerThings),
+  Content(name: 'The Umbrella Academy', imageUrl: MyflixAssets.umbrellaAcademy),
+  Content(name: '13 Reasons Why', imageUrl: MyflixAssets.thirteenReasonsWhy),
+  Content(name: 'The End of the F***ing World', imageUrl: MyflixAssets.teotfw),
+  Content(name: 'Stranger Things', imageUrl: MyflixAssets.strangerThings),
+  Content(name: 'The Umbrella Academy', imageUrl: MyflixAssets.umbrellaAcademy),
+  Content(name: '13 Reasons Why', imageUrl: MyflixAssets.thirteenReasonsWhy),
+  Content(name: 'The End of the F***ing World', imageUrl: MyflixAssets.teotfw),
+  Content(name: 'Stranger Things', imageUrl: MyflixAssets.strangerThings),
+  Content(name: 'The Umbrella Academy', imageUrl: MyflixAssets.umbrellaAcademy),
+  Content(name: '13 Reasons Why', imageUrl: MyflixAssets.thirteenReasonsWhy),
+  Content(name: 'The End of the F***ing World', imageUrl: MyflixAssets.teotfw),
+  Content(name: 'Stranger Things', imageUrl: MyflixAssets.strangerThings),
+  Content(name: 'The Umbrella Academy', imageUrl: MyflixAssets.umbrellaAcademy),
+  Content(name: '13 Reasons Why', imageUrl: MyflixAssets.thirteenReasonsWhy),
+  Content(name: 'The End of the F***ing World', imageUrl: MyflixAssets.teotfw),
+];
+
+final List<Content> trending = const [
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
+  Content(name: 'Tiger King', imageUrl: MyflixAssets.tigerKing),
+  Content(name: 'The Crown', imageUrl: MyflixAssets.crown),
 ];
