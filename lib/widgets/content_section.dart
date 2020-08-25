@@ -4,11 +4,13 @@ import 'package:myflix/models/all_models.dart';
 class ContentSection extends StatelessWidget {
   final String title;
   final List<Content> contentSectionList;
+  final bool isOriginals;
 
   const ContentSection({
     Key key,
     @required this.title,
     @required this.contentSectionList,
+    this.isOriginals = false,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class ContentSection extends StatelessWidget {
             ),
           ),
           Container(
-            height: 220.0,
+            height: isOriginals ? 500.0 : 220.0,
             child: ListView.builder(
               padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
               scrollDirection: Axis.horizontal,
@@ -40,8 +42,8 @@ class ContentSection extends StatelessWidget {
                   onTap: () => print(content.name),
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 8.0),
-                    height: 200.0,
-                    width: 130.0,
+                    height: isOriginals ? 400.0 : 200.0,
+                    width: isOriginals ? 200.0 : 130.0,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(content.imageUrl),
