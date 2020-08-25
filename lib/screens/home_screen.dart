@@ -3,6 +3,7 @@ import 'package:myflix/data/data.dart';
 import 'package:myflix/widgets/all_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key key}) : super(key: key);
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
