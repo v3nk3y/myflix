@@ -57,6 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
             sliver: SliverToBoxAdapter(
               child: PreviewsSection(
+                key: PageStorageKey('previews'),
                 title: 'Previews',
                 previewsContentList: previews,
               ),
@@ -66,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.only(bottom: 10.0),
             sliver: SliverToBoxAdapter(
               child: ContentSection(
+                key: PageStorageKey('myList'),
                 title: 'My List',
                 contentSectionList: myList,
               ),
@@ -75,6 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.only(bottom: 10.0),
             sliver: SliverToBoxAdapter(
               child: ContentSection(
+                key: PageStorageKey('myflixOriginals'),
                 title: 'Myflix Originals',
                 contentSectionList: originals,
                 isOriginals: true,
@@ -85,6 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.only(bottom: 20.0),
             sliver: SliverToBoxAdapter(
               child: ContentSection(
+                key: PageStorageKey('trending'),
                 title: 'Trending',
                 contentSectionList: trending,
               ),

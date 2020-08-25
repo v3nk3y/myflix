@@ -8,7 +8,7 @@ class NavScreen extends StatefulWidget {
 
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
-    HomeScreen(key: PageStorageKey('HomeScreen')),
+    HomeScreen(key: PageStorageKey('homeScreen')),
     Scaffold(),
     Scaffold(),
     Scaffold(),
