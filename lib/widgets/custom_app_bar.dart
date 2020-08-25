@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:myflix/myflix_assets.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key key}) : super(key: key);
+  final double scrollOffset;
+  const CustomAppBar({Key key, this.scrollOffset}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-//      color: Colors.blueAccent,
+      color:
+          Colors.black.withOpacity((scrollOffset / 400).clamp(0, 1).toDouble()),
       child: SafeArea(
         child: Row(
           children: [
