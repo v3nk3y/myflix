@@ -29,29 +29,41 @@ class _HomeScreenState extends State<HomeScreen> {
               featuredContent: sintelContent,
             ),
           ),
-          SliverToBoxAdapter(
-            child: PreviewsSection(
-              title: 'Previews',
-              previewsContentList: previews,
+          SliverPadding(
+            padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+            sliver: SliverToBoxAdapter(
+              child: PreviewsSection(
+                title: 'Previews',
+                previewsContentList: previews,
+              ),
             ),
           ),
-          SliverToBoxAdapter(
-            child: ContentSection(
-              title: 'My List',
-              contentSectionList: myList,
+          SliverPadding(
+            padding: EdgeInsets.only(bottom: 10.0),
+            sliver: SliverToBoxAdapter(
+              child: ContentSection(
+                title: 'My List',
+                contentSectionList: myList,
+              ),
             ),
           ),
-          SliverToBoxAdapter(
-            child: ContentSection(
-              title: 'Myflix Originals',
-              contentSectionList: originals,
-              isOriginals: true,
+          SliverPadding(
+            padding: EdgeInsets.only(bottom: 10.0),
+            sliver: SliverToBoxAdapter(
+              child: ContentSection(
+                title: 'Myflix Originals',
+                contentSectionList: originals,
+                isOriginals: true,
+              ),
             ),
           ),
-          SliverToBoxAdapter(
-            child: ContentSection(
-              title: 'Trending',
-              contentSectionList: trending,
+          SliverPadding(
+            padding: EdgeInsets.only(bottom: 20.0),
+            sliver: SliverToBoxAdapter(
+              child: ContentSection(
+                title: 'Trending',
+                contentSectionList: trending,
+              ),
             ),
           )
         ],
