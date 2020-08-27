@@ -4,3 +4,4 @@ export 'featured_vertical_button.dart';
 export 'featured_play_button.dart';
 export 'preview_section.dart';
 export 'content_section.dart';
+export 'responsive.dart';
