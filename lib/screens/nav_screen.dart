@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myflix/screens/all_screens.dart';
+import 'package:myflix/widgets/all_widgets.dart';
 
 class NavScreen extends StatefulWidget {
   @override
@@ -20,38 +21,40 @@ class _NavScreenState extends State<NavScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screens[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black,
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 25.0),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search, size: 25.0),
-            title: Text('Search'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.queue_play_next, size: 25.0),
-            title: Text('Coming Soon'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.file_download, size: 25.0),
-            title: Text('Downloads'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu, size: 25.0),
-            title: Text('More'),
-          ),
-        ],
-        currentIndex: _currentIndex,
-        selectedItemColor: Colors.white,
-        selectedFontSize: 11.0,
-        unselectedItemColor: Colors.grey,
-        unselectedFontSize: 11.0,
-        onTap: (index) => setState(() => _currentIndex = index),
-      ),
+      bottomNavigationBar: !Responsive.isDesktop(context)
+          ? BottomNavigationBar(
+              backgroundColor: Colors.black,
+              type: BottomNavigationBarType.fixed,
+              items: const <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home, size: 25.0),
+                  title: Text('Home'),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.search, size: 25.0),
+                  title: Text('Search'),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.queue_play_next, size: 25.0),
+                  title: Text('Coming Soon'),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.file_download, size: 25.0),
+                  title: Text('Downloads'),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.menu, size: 25.0),
+                  title: Text('More'),
+                ),
+              ],
+              currentIndex: _currentIndex,
+              selectedItemColor: Colors.white,
+              selectedFontSize: 11.0,
+              unselectedItemColor: Colors.grey,
+              unselectedFontSize: 11.0,
+              onTap: (index) => setState(() => _currentIndex = index),
+            )
+          : null,
     );
   }
 }
