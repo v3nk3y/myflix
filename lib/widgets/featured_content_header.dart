@@ -127,22 +127,28 @@ class __FeaturedContentHeaderDesktopState
       child: Stack(
         alignment: Alignment.bottomLeft,
         children: [
-          Container(
-            height: 500.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(widget.featuredContent.imageUrl),
-                fit: BoxFit.cover,
-              ),
-            ),
+          AspectRatio(
+            aspectRatio: _videoController.value.initialized
+                ? _videoController.value.aspectRatio
+                : 2.344,
+            child: _videoController.value.initialized
+                ? VideoPlayer(_videoController)
+                : Image.asset(
+                    widget.featuredContent.imageUrl,
+                    fit: BoxFit.cover,
+                  ),
           ),
-          Container(
-            height: 500.0,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.black, Colors.transparent],
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
+          AspectRatio(
+            aspectRatio: _videoController.value.initialized
+                ? _videoController.value.aspectRatio
+                : 2.344,
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.black, Colors.transparent],
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                ),
               ),
             ),
           ),
@@ -179,8 +185,12 @@ class __FeaturedContentHeaderDesktopState
                     FeaturedPlayButton(),
                     const SizedBox(width: 20.0),
                     FlatButton.icon(
+                      padding: const EdgeInsets.fromLTRB(25.0, 10, 30.0, 10),
                       onPressed: () => print('More Info'),
-                      icon: const Icon(Icons.info_outline),
+                      icon: const Icon(
+                        Icons.info_outline,
+                        size: 30.0,
+                      ),
                       color: Colors.white,
                       label: const Text(
                         'More Info',
