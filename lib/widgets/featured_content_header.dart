@@ -190,7 +190,20 @@ class __FeaturedContentHeaderDesktopState
                         ),
                       ),
                     ),
-                    const SizedBox(width: 20.0),
+                    const SizedBox(width: 15.0),
+                    if (_videoController.value.initialized)
+                      IconButton(
+                        icon:
+                            Icon(isMuted ? Icons.volume_off : Icons.volume_up),
+                        color: Colors.white,
+                        iconSize: 30.0,
+                        onPressed: () => setState(() {
+                          isMuted
+                              ? _videoController.setVolume(100)
+                              : _videoController.setVolume(0);
+                          isMuted = _videoController.value.volume == 0;
+                        }),
+                      )
                   ],
                 )
               ],
